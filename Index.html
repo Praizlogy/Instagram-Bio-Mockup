@@ -6,8 +6,8 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add" />
     </head>
 <body>
     <div class="main">
@@ -18,28 +18,61 @@
                 <h1>INSTA BIO</h1>
             </div>
 
+            <br>
+
             <form action="">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username"> <br>
+                <label for="username">Username</label> <br>
+                <input type="text" name="username" id="username" class="inputBox"> <br> <br>
 
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name"> <br>
+                <label for="name">Name</label> <br>
+                <input type="text" name="name" id="name" class="inputBox"> <br> <br>
 
-                <label for="bio">Bio</label>
-                <input type="text" name="bio" id="bio" maxlength="150"><br>
+                <label for="bio">Bio</label> <br>
+                <input type="text" name="bio" id="bio" maxlength="150" class="inputBox"> <br> <br>
 
-                <label for="profile-img">Profile image</label>
-                <input type="file" name="profile-img" id="profile-img" accept="image/*">
-
-                <label for="feed-images">Feed images</label>
+                <label for="profile-img">Profile image</label> <br>
+                <label for="profile-img"><img src="images/image-placeholder.jpg" alt=""></label>
+                <input type="file" name="profile-img" id="profile-img" accept="image/*" > <br> <br> 
                 
             </form>
+
+            <button type="button" onclick="sendD()" for="profile-img">Generate</button>
         </div>
 
         <div class="right-section">
+            <div class="frame">
+                <div class="frame-nav">
+                    <img src="images/Back.svg" alt="">
+                    <span class="Verified-name">emmawatking<img src="images/Verification.svg" alt=""></span>
+                    <span ><img src="images/Bell.svg" class="Bell" alt=""><img src="images/option.svg" alt=""></span>
+                </div>    
+            </div>   <br>
             
-            
+            <!---->
+            <div class="image-followers">
+                <span><img src="images/pic.png" alt=""></span>
+                <span class="followers-group">
+                    <div class="post">
+                        <h3>442</h3>
+                        <p>Post</p>
+                    </div>
+                    <div class="follower">
+                        <h3>3,500</h3>
+                        <p>Followers</p>
+                    </div>
+                    <div class="following">
+                        <h3>2,080</h3>
+                        <p>Folllowing</p>
+                    </div>
+                </span>
+            </div>
+            <!---->
+            <p class="Musername" id="Musername">justemma</p>
+            <p class="bio">Nothing out of the ordinary... Just me and Jah
+            </p>
         </div>
+
+        
     </div>
     
 <script src="script.js"></script>
