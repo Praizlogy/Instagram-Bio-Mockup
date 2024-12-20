@@ -90,10 +90,12 @@ body {
 
 .edit-profile button {
     padding: 5px 20px;
-    border: 1px solid #ddd;
-    background-color: #f8f8f8;
-    border-radius: 10px;
+    border: 1px solid #dddddd00;
+    background-color: #cbcbcc;
+    border-radius: 5px;
     cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 /* Highlights Section */
