@@ -1,158 +1,140 @@
-*{
-    padding: 0px;
-    margin: 0px;
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: "Mona Sans", sans-serif;
 }
 
-.main {
+body {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    height: 100vh;
 }
 
-.left-section {
-    border: 2px solid black;
-    width: 50%;
-    padding: 15px;
-    font-weight: bold;
+/* Phone Container */
+.phone-container {
+    width: 375px;
+    height: 667px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+
+/* Header Section */
+.header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
-}
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
 
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    div{
+        display: flex;
+        gap: 2px;
+    }
 
-    img{
-        width: 30px;
-        height: 38px;
-        transform: translateX(-5px);
+    .bell-icon{
+        transform: translateX(-12px);
     }
 }
 
-form{
-    width: 70%;
-    label{
-        line-height: 40px;
-    }
-}
 
-.inputBox {
-    width: 100%;
-    height: 3.2rem;
-    border-radius: 12px 12px 12px 12px;
-    border: 1.5px solid #e7e7e9;
-    padding: 18px 20px;
-    outline: none;
-}
-
-label{
+.profile-name {
     font-size: 18px;
-}
-.inputBox:focus{
-    box-shadow: 1px 1px 10px rgba(224, 53, 53, 0.212);
+    font-weight: bold;
 }
 
-input[type="file"] {
-    display: none;
-}
-
-label > img {
-    width: 50px;
-    height: 50px;
-}
-
-
-button{
-    width: 40%;
-    font-size: 17px;
-    padding: 12px 20px;
-    border-radius: 12px;
-    color: white;
-    font-weight: bolder;
-    background-color: black;
-}
-
-.right-section {
-    border: 2px solid black;
-    width: 50%;
+/* Profile Info */
+.profile-info {
+    display: flex;
+    align-items: center;
     padding: 15px;
-    overflow: hidden;
 }
 
-.frame {
-    width: 1080px;
-    height: 1920px;
-    overflow: hidden;
-}
-
-.frame-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    img{
-        width: 23px;
-        height: 20px;
-    }
-}
-
-.Verified-name{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 800;
-
-    img{
-        transform: translateX(4px);
-    }
-}
-
-.Bell{
-    transform: translateX(-9px);
-}
-
-.image-followers{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    img{
-        width: 85px;
-        height: 85px;
-    }
-}
-
-.followers-group{
-    display: flex;
-    gap: 30px;
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    background-color: #bbb;
+    border-radius: 50%;
     margin-right: 30px;
-
-    .post{
-        text-align: center;
-    }
-
-    .follower{
-        text-align: center;
-    }
-
-    .following{
-        text-align: center;
-    }
-
-    p{
-        font-size: 15px;
-    }
 }
 
-.Musername{
-    font-weight: 800;
-    font-size: 15px;
+.stats {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
 }
 
+.stats div {
+    text-align: center;
+    font-size: 14px;
+}
 
+/* Profile Bio */
+.profile-bio {
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+/* Edit Profile */
+.edit-profile {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.edit-profile button {
+    padding: 5px 20px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Highlights Section */
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.highlight-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.grid-icon, .reels-icon, .tagged-icon {
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    border-radius: 4px;
+}
+
+/* Gallery Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    flex-grow: 1;
+}
+
+.gallery-item {
+    background-color: #ddd;
+    height: 120px;
+}
